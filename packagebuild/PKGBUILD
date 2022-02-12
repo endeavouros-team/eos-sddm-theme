@@ -1,0 +1,18 @@
+# Maintainer: EndeavourOS <info@endeavouros.com>
+
+pkgname=eos-sddm-theme
+pkgver=1.0
+pkgrel=1
+pkgdesc='EndeavourOS Theme for SDDM'
+arch=('any')
+url="https://github.com/endeavouros-team/$pkgname"
+license=('GPL')
+depends=('sddm')
+makedepends=('git')
+source=('git+https://github.com/endeavouros-team/$pkgname')
+sha256sums=('SKIP')
+
+package() {
+    install -dm 755 $pkgdir/usr/share/sddm/themes/endeavouros
+    cp -r --no-preserve=ownership endeavouros $pkgdir/usr/share/sddm/themes/
+}
