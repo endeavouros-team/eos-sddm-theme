@@ -2,7 +2,7 @@
 
 pkgname=eos-sddm-theme
 pkgver=1.0
-pkgrel=1
+pkgrel=2
 pkgdesc='EndeavourOS Theme for SDDM'
 arch=('any')
 url="https://github.com/endeavouros-team/$pkgname"
@@ -14,5 +14,7 @@ sha256sums=('SKIP')
 
 package() {
     install -dm 755 $pkgdir/usr/share/sddm/themes/endeavouros
-    cp -r --no-preserve=ownership endeavouros $pkgdir/usr/share/sddm/themes/
+    install -dm 755 $pkgdir/etc/sddm.conf.d/
+    cp -r --no-preserve=ownership $srcdir/$pkgname/endeavouros $pkgdir/usr/share/sddm/themes/
+    cp --no-preserve=ownership $srcdir/$pkgname/10-endeavouros.conf $pkgdir/etc/sddm.conf.d/
 }
