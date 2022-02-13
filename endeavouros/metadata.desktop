@@ -1,7 +1,7 @@
 [SddmGreeterTheme]
 Name=endeavouros
-Description=endeavourose
-Author=KDE Visual Design Group
+Description=endeavouros
+Author=EndeavourOS
 Copyright=(c) 2014, David Edmundson
 License=CC-BY-SA
 Type=sddm-theme
@@ -11,6 +11,6 @@ Screenshot=preview.png
 MainScript=Main.qml
 ConfigFile=theme.conf
 TranslationsDirectory=translations
-Email=plasma-devel@kde.org
+Email=info@endeavouros.com
 Theme-Id=endeavouros
 Theme-API=2.0
