@@ -9,8 +9,8 @@ url="https://github.com/endeavouros-team/$pkgname"
 license=('GPL')
 depends=('sddm')
 makedepends=('git')
-source=('git+https://github.com/endeavouros-team/$pkgname')
-sha256sums=('SKIP')
+source=('git+https://github.com/endeavouros-team/$pkgname' 'eos-sddm-theme.install')
+sha256sums=('SKIP' 'SKIP')
 
 package() {
     install -dm 755 $pkgdir/usr/share/sddm/themes/endeavouros
