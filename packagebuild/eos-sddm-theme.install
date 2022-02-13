@@ -1,37 +1,12 @@
-# This is a default template for a post-install scriptlet.
-# Uncomment only required functions and remove any functions
-# you don't need (and this header).
-
-## arg 1:  the new package version
 pre_install() {
-	echo "To enable SDDM you need to run this:
+	echo "To enable SDDM you need to run this:"
 	echo "sudo systemctl -f enable sddm"
 	echo "this will disable current used DM and enable sddm up from next boot!"
 }
 
-## arg 1:  the new package version
+
 post_install() {
 	cp /etc/sddm.conf.d/10-endeavouros.conf /etc/sddm.conf.d/kde_settings.conf
 }
 
-## arg 1:  the new package version
-## arg 2:  the old package version
-#pre_upgrade() {
-	# do something here
-#}
 
-## arg 1:  the new package version
-## arg 2:  the old package version
-#post_upgrade() {
-	# do something here
-#}
-
-## arg 1:  the old package version
-#pre_remove() {
-	# do something here
-#}
-
-## arg 1:  the old package version
-#post_remove() {
-	# do something here
-#}
