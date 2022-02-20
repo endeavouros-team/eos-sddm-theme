@@ -1,16 +1,17 @@
 [SddmGreeterTheme]
-Name=endeavouros
-Description=endeavouros
-Author=EndeavourOS
-Copyright=(c) 2014, David Edmundson
-License=CC-BY-SA
+Name=EndeavourOS
+Description=Simple SDDM theme for EndeavourOS
 Type=sddm-theme
-Version=0.1
-Website=https://github.com/sddm/sddm
-Screenshot=preview.png
+Original Author=Gabriel Ibáñez
+Copyright=(c) 2019, Gabriel Ibáñez
+Screenshot=screenshot.png
+License=GPL
+Version=1.0
 MainScript=Main.qml
 ConfigFile=theme.conf
 TranslationsDirectory=translations
-Email=info@endeavouros.com
 Theme-Id=endeavouros
 Theme-API=2.0
+Original Website=https://gitlab.com/isseigx/simplicity-sddm-theme
+Webside=https://github.com/endeavouros-team/eos-sddm-theme
+
