@@ -1,4 +1,7 @@
 # eos-sddm-theme
+
+[![Maintenance](https://img.shields.io/maintenance/yes/2023.svg)]()
+
 sddm theme using default EndeavourOS wallpaper
 Forked from: 
 https://gitlab.com/isseigx/simplicity-sddm-theme
